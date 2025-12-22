@@ -4,7 +4,7 @@ import { Link } from 'react-router'
 function Header() {
     const headerName = ["<Work/>", "<Projects/>", "<Blogs/>", "</>"]
     return (
-        <div className='border flex flex-row justify-between items-center px-4 py-2 rounded-lg'>
+        <div className='border flex flex-row justify-between items-center px-4 py-2 rounded-lg font-inter-500 tracking-wide'>
             <div className='rounded-2xl'>
                 <img src="/icons/Dark-Soul.png" className='w-10 rounded-lg' />
             </div>
@@ -16,9 +16,6 @@ function Header() {
                 <Link to="/social">
                     <img src="/icons/social.png" className='w-7' />
                 </Link>
-                <div className='w-6'>
-                    <img src="/icons/theme.png" alt="" />
-                </div>
             </div>
         </div>
     )
