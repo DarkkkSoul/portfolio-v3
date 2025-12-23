@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import '../../styles/bento.css'
-import music from '../../arrays/music'
+import musicArr from '../../arrays/music'
 import social from '../../arrays/social';
+import { useNavigate } from 'react-router';
 
 function Bento() {
 
@@ -46,16 +47,18 @@ function Bento() {
     let [musicIndex, setMusicIndex] = useState(0);
     const handleMusic = () => {
         let next = musicIndex + 1;
-        if (next > music.length - 1) next = 0;
+        if (next > musicArr.length - 1) next = 0;
         setMusicIndex(next);
-        setMusic(music[next]);
+        setMusic(musicArr[next]);
     }
 
+    const navigate = useNavigate();
+
     return (
-        <div className="parent relative *:border *:inset-shadow-sm/20">
+        <div className="parent relative *:border *:inset-shadow-sm/20 font-inter-400">
 
             <div className="div1 px-2 flex flex-col py-3 gap-y-2">
-                <div className="font-bold text-center">Tools I use</div>
+                <div className="font-inter-700 text-center">Tools I use</div>
                 <ul className="list-disc list-inside space-y-0.5 text-sm pl-2">
                     <li className='hover:underline'>
                         <a href="https://www.figma.com" target='_blank'>Figma</a>
@@ -75,7 +78,7 @@ function Bento() {
                 </ul>
             </div>
 
-            <div className='div2 flex flex-col justify-center items-center'>
+            <div className='div2 flex flex-col justify-center items-center cursor-pointer'>
                 <a onClick={handleMusic} href={music} target='_blank'>
                     <img src="/icons/music.png" className='object-cover rounded-lg' />
                 </a>
@@ -84,10 +87,10 @@ function Bento() {
             <div className="div3 flex items-center justify-center text-4xl relative">
                 <div className='absolute flex items-center gap-x-1.5 top-1.5 left-1.5'>
                     <img src="/icons/earth.png" className=' w-5 ' />
-                    <div className='text-xs tracking-wide'>{day}</div>
+                    <div className='text-xs tracking-wide font-inter-500'>{day}</div>
                 </div>
                 {time}
-                <div className='text-xs absolute bottom-1.5 right-1.5'>{year}</div>
+                <div className='text-xs absolute bottom-1.5 right-1.5 font-inter-500'>{year}</div>
             </div>
 
             <div className="div4 flex flex-col justify-center">
@@ -99,8 +102,8 @@ function Bento() {
             </div>
 
             <div className='div5 flex flex-col justify-center'>
-                <p className='text-lg pl-6'>I write</p>
-                <p className='text-7xl underline underline-offset-4 cursor-pointer pl-11 relative'>Blogs
+                <p className='text-lg pl-6 font-inter-500'>I write</p>
+                <p className='text-7xl underline underline-offset-4 cursor-pointer pl-11 relative font-inter-600' onClick={()=>navigate('/blogs')}>Blogs
                     <img src="/icons/link.png" className='absolute top-2 right-7 w-4' />
                 </p>
             </div>

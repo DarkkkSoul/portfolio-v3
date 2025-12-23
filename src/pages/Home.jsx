@@ -10,7 +10,7 @@ import Footer from '../components/Footer.jsx'
 
 function Home() {
     return (
-        <div className='w-[40vw] h-full mx-auto pt-15 pb-10 '>
+        <div className='w-[40vw] h-full mx-auto pt-15 pb-10'>
             <Header />
 
             <div className='mt-16'>
