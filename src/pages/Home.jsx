@@ -10,18 +10,18 @@ import Footer from '../components/Footer.jsx'
 
 function Home() {
     return (
-        <div className='w-[40vw] h-full mx-auto py-8'>
+        <div className='w-[40vw] h-full mx-auto pt-15 pb-10 '>
             <Header />
 
             <div className='mt-16'>
                 <Intro />
             </div>
 
-            <div className='flex justify-center items-center mt-14'>
+            <div className='flex justify-center items-center mt-12'>
                 <NPM />
             </div>
 
-            <div className='mt-14'>
+            <div className='mt-15'>
                 <h3 className='text-2xl font-bold font-inter-700 text-black/90'>Professional Experience</h3>
                 {expirence.map((item) => (
                     <Expirence key={item.id} imageUrl={item.imageUrl} companyName={item.companyName} position={item.position} startDate={item.startDate} endDate={item.endDate} type={item.type} place={item.place} contribution={item.contribution} />
