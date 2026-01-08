@@ -2,7 +2,7 @@ function Expirence({ imageUrl, companyName, position, startDate, endDate, type, 
     return (
         <div className=' flex flex-col justify-center gap-y-2 mt-5'>
             <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between gap-y-3'>
-                <div className='flex gap-x-3 items-center justify-center'>
+                <div className='flex gap-x-3 items-center justify-start sm:justify-center'>
                     <div>
                         <img src={imageUrl} className='sm:w-11 w-9 border rounded-full' />
                     </div>

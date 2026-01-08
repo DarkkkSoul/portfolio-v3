@@ -15,7 +15,7 @@ function Home() {
         <div className='w-[92vw] sm:w-[85vw] lg:w-[40vw] h-full mx-auto pt-15 pb-10'>
             <Header />
 
-            <div className='mt-16'>
+            <div className='sm:mt-16 mt-14'>
                 <Intro />
             </div>
 
