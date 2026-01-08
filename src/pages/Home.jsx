@@ -9,6 +9,7 @@ import Stack from '../components/home/Stack.jsx'
 import Footer from '../components/Footer.jsx'
 import Projects from './Projects.jsx'
 import Blogs from './Blogs.jsx'
+import SmBento from '../components/home/SmBento.jsx'
 
 function Home() {
     return (
@@ -51,6 +52,10 @@ function Home() {
 
             <div className='mt-14 sm:flex justify-center items-center hidden'>
                 <Bento />
+            </div>
+
+            <div className='mt-10 flex justify-center items-center sm:hidden'>
+                <SmBento />
             </div>
 
             <div className='sm:mt-14 mt-11'>
