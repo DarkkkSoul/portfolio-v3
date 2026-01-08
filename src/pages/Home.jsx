@@ -53,6 +53,20 @@ function Home() {
 
             <div className='mt-14'>
                 <h3 className='text-2xl font-bold font-inter-700 text-black/90'>Little more about myself</h3>
+                <div className='mt-2 font-inter-400 text-lg flex flex-col gap-y-1'>
+                    <div>
+                        I started my web development journey around <span className='font-inter-400-italic'>Septermber 2024</span>, which started as a curosity to built an web application turned out to be my main stream focus where I started learning tech from <span className='font-inter-700'>first principles</span> (unknowingly) by building projects which made my foundations strong.
+                    </div>
+                    <div>
+                        <span className='font-inter-400-italic'>This technique</span> gave me confidence that I can learn any new things within days or so.
+                    </div>
+                    <div>
+                        I work solo and fast, mostly with <span className='font-inter-700'>Javascript frameworks</span>. You will see me posting about backend designing and exploring new technologies publically.
+                    </div>
+                    <div>
+                        <span className='font-inter-400-italic'>Currently, </span>I'm deep diving into React and planning to shift my career towards Gen AI where I can integrate AI to my projects.
+                    </div>
+                </div>
             </div>
 
             <div className='mt-10'>
