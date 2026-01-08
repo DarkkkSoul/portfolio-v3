@@ -1,10 +1,16 @@
 import React from 'react'
 import Header from '../components/Header'
+import blogs from '../arrays/blogs'
+import BlogCompo from '../components/home/BlogCompo'
 
 function Blogs() {
   return (
-    <div className='w-[40vw] h-screen mx-auto pt-15 pb-10'>
-        <Header/>
+    <div className='grid grid-cols-2 gap-5 mt-8'>
+      {
+        blogs.map((b) => {
+          return <BlogCompo key={b.id} title={b.title} description={b.description} link={b.link} />
+        })
+      }
     </div>
   )
 }

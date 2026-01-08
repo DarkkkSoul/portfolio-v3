@@ -8,6 +8,8 @@ import Bento from '../components/home/Bento.jsx'
 import Stack from '../components/home/Stack.jsx'
 import Footer from '../components/Footer.jsx'
 import Projects from './Projects.jsx'
+import Blogs from './Blogs.jsx'
+import blogs from '../arrays/blogs.js'
 
 function Home() {
     return (
@@ -24,9 +26,11 @@ function Home() {
 
             <div className='mt-15'>
                 <h3 className='text-2xl font-bold font-inter-700 text-black/90'>Professional Experience</h3>
-                {expirence.map((item) => (
-                    <Expirence key={item.id} imageUrl={item.imageUrl} companyName={item.companyName} position={item.position} startDate={item.startDate} endDate={item.endDate} type={item.type} place={item.place} contribution={item.contribution} />
-                ))}
+                {
+                    expirence.map((item) => (
+                        <Expirence key={item.id} imageUrl={item.imageUrl} companyName={item.companyName} position={item.position} startDate={item.startDate} endDate={item.endDate} type={item.type} place={item.place} contribution={item.contribution} />
+                    ))
+                }
             </div>
 
             <div className='mt-9'>
@@ -49,6 +53,13 @@ function Home() {
 
             <div className='mt-14'>
                 <h3 className='text-2xl font-bold font-inter-700 text-black/90'>Little more about myself</h3>
+            </div>
+
+            <div className='mt-10'>
+                <h3 className='text-2xl font-bold font-inter-700 text-black/90'>
+                    I share my stories & writtings too
+                </h3>
+                <Blogs />
             </div>
 
             <div className='mt-14'>
