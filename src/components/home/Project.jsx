@@ -26,16 +26,13 @@ function Project({ img, title, description, isActive, stack, website, source }) 
                         <span key={index} className='border rounded-sm px-2 py-1 text-xs bg-gray-100/50 font-inter-300 font-black leading-none whitespace-nowrap'>{tech}</span>
                     ))}
                 </div>
-                <div className='flex items-center justify-between mt-0.5'>
-                    <div className='flex gap-x-2 text-md font-inter-400 *:hover:underline'>
-                        <div>
-                            <a href={website} target="_blank" rel="noopener noreferrer">Website</a>
-                        </div>
-                        <div>
-                            <a href={source} target="_blank" rel="noopener noreferrer">Source</a>
-                        </div>
+                <div className='text-sm flex gap-x-2 text-md font-inter-400 *:hover:underline'>
+                    <div>
+                        <a href={website} target="_blank" rel="noopener noreferrer">Website</a>
                     </div>
-                    <div className='font-inter-500 hover:underline cursor-pointer'>More -&gt;</div>
+                    <div>
+                        <a href={source} target="_blank" rel="noopener noreferrer">Source</a>
+                    </div>
                 </div>
             </div>
         </div>

@@ -18,26 +18,26 @@ function Projects() {
   }, [currentType]);
 
   return (
-    <div className='w-[40vw] h-full mx-auto pt-15 pb-10'>
-      <Header />
-      <div className='mt-16 gap-y-2 flex flex-col items-center'>
-        <h1 className='text-7xl font-inter-600 tracking-wide'>Projects</h1>
-        {
-          impactful &&
-          <p className='text-lg mt-2 font-inter-500 text-gray-600'>Built to solve real problems</p>
-        }
-        {
-          fun &&
-          <p className='text-lg mt-2 font-inter-500 text-gray-600'>Built for fun</p>
-        }
-        {
-          clone &&
-          <p className='text-lg mt-2 font-inter-500 text-gray-600'>Built to improve design sense</p>
-        }
-
+    <div>
+      <div className='flex flex-row gap-x-2 items-center'>
+        <div className='text-2xl font-bold font-inter-700 text-black/90'>Projects I've built</div>
+        <div className='text-2xl font-inter-500 text-gray-600'>
+          {
+            impactful &&
+            <p>to solve real problems</p>
+          }
+          {
+            fun &&
+            <p>for fun</p>
+          }
+          {
+            clone &&
+            <p>to improve design sense</p>
+          }
+        </div>
       </div>
 
-      <div className='flex *:border *:py-1 *:px-2 gap-x-2.5 mt-11 *:rounded-lg *:cursor-pointer '>
+      <div className='flex *:border *:py-1 *:px-2 gap-x-2.5 mt-4 *:rounded-lg *:cursor-pointer *:text-sm'>
         <button
           onClick={() => { setImpactful(true); setFun(false); setClone(false); }}
           style={{
@@ -86,8 +86,8 @@ function Projects() {
         }
       </div>
 
-      <Footer />
-    </div>
+      {/* <Footer /> */}
+    </div >
   )
 }
 

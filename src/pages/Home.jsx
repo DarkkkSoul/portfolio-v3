@@ -7,6 +7,7 @@ import Expirence from '../components/home/Expirence.jsx'
 import Bento from '../components/home/Bento.jsx'
 import Stack from '../components/home/Stack.jsx'
 import Footer from '../components/Footer.jsx'
+import Projects from './Projects.jsx'
 
 function Home() {
     return (
@@ -28,6 +29,10 @@ function Home() {
                 ))}
             </div>
 
+            <div className='mt-9'>
+                <Projects />
+            </div>
+
             <div className='mt-14 text-center flex gap-x-1 items-center font-inter-400'>
                 <p className='text-lg'>I love designing bento styled websites, just like how <span className='font-inter-700'>Rengoku</span> loves to eat <span className='font-inter-400-italic'>ekiben.</span></p>
                 <div><img src="/icons/sound.png" className='w-6 cursor-pointer' /></div>
@@ -38,13 +43,12 @@ function Home() {
             </div>
 
             <div className='mt-14'>
-                <h3 className='text-2xl font-bold font-inter-700 text-black/90'>Little more about myself</h3>
-            </div>
-
-
-            <div className='mt-14'>
                 <h3 className='text-2xl font-bold font-inter-700 text-black/90'>Stack I primarily use</h3>
                 <Stack />
+            </div>
+
+            <div className='mt-14'>
+                <h3 className='text-2xl font-bold font-inter-700 text-black/90'>Little more about myself</h3>
             </div>
 
             <div className='mt-14'>
