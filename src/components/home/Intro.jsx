@@ -1,6 +1,6 @@
 function Intro() {
     return (
-        <div className='flex flex-row gap-x-10 items-center'>
+        <div className='flex flex-col sm:flex-row gap-y-6 sm:gap-y-0 gap-x-10 items-center'>
             <div>
                 <img src="/profile.png" className='w-45 rounded-4xl' />
             </div>

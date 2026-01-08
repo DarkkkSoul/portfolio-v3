@@ -1,7 +1,7 @@
 function Expirence({ imageUrl, companyName, position, startDate, endDate, type, place, contribution }) {
     return (
         <div className=' flex flex-col justify-center gap-y-2 mt-5'>
-            <div className='flex items-center justify-between'>
+            <div className='flex flex-col sm:flex-row sm:items-center sm:justify-between gap-y-3'>
                 <div className='flex gap-x-3 items-center justify-center'>
                     <div>
                         <img src={imageUrl} className='w-11 border rounded-full' />
@@ -11,9 +11,9 @@ function Expirence({ imageUrl, companyName, position, startDate, endDate, type, 
                         <div className='text-sm font-inter-200 tracking-wide'>{position}</div>
                     </div>
                 </div>
-                <div className='font-inter-300 text-md'>
+                <div className='font-inter-300 text-md sm:text-right'>
                     <div>{startDate} - {endDate}</div>
-                    <div className='flex justify-end'>{type} ({place})</div>
+                    <div className='sm:flex sm:justify-end'>{type} ({place})</div>
                 </div>
             </div>
             <div className='font-inter-400 text-black/80 text-lg px-6'>

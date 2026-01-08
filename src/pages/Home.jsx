@@ -9,11 +9,10 @@ import Stack from '../components/home/Stack.jsx'
 import Footer from '../components/Footer.jsx'
 import Projects from './Projects.jsx'
 import Blogs from './Blogs.jsx'
-import blogs from '../arrays/blogs.js'
 
 function Home() {
     return (
-        <div className='w-[40vw] h-full mx-auto pt-15 pb-10'>
+        <div className='w-[92vw] sm:w-[85vw] lg:w-[40vw] h-full mx-auto pt-15 pb-10'>
             <Header />
 
             <div className='mt-16'>
@@ -24,7 +23,7 @@ function Home() {
                 <NPM />
             </div>
 
-            <div className='mt-15'>
+            <div id="work" className='mt-15 scroll-mt-28'>
                 <h3 className='text-2xl font-bold font-inter-700 text-black/90'>Professional Experience</h3>
                 {
                     expirence.map((item) => (
@@ -33,7 +32,7 @@ function Home() {
                 }
             </div>
 
-            <div className='mt-9'>
+            <div id="projects" className='mt-9 scroll-mt-28'>
                 <Projects />
             </div>
 
@@ -42,7 +41,7 @@ function Home() {
                 <div><img src="/icons/sound.png" className='w-6 cursor-pointer' /></div>
             </div>
 
-            <div className='mt-14 flex justify-center items-center'>
+            <div className='mt-14 sm:flex justify-center items-center hidden'>
                 <Bento />
             </div>
 
@@ -53,7 +52,7 @@ function Home() {
 
             <div className='mt-14'>
                 <h3 className='text-2xl font-bold font-inter-700 text-black/90'>Little more about myself</h3>
-                <div className='mt-2 font-inter-400 text-lg flex flex-col gap-y-1'>
+                <div className='mt-2 font-inter-400 text-base sm:text-lg flex flex-col gap-y-1'>
                     <div>
                         I started my web development journey around <span className='font-inter-400-italic'>Septermber 2024</span>, which started as a curosity to built an web application turned out to be my main stream focus where I started learning tech from <span className='font-inter-700'>first principles</span> (unknowingly) by building projects which made my foundations strong.
                     </div>
@@ -69,7 +68,7 @@ function Home() {
                 </div>
             </div>
 
-            <div className='mt-10'>
+            <div id="blogs" className='mt-10 scroll-mt-28'>
                 <h3 className='text-2xl font-bold font-inter-700 text-black/90'>
                     I share my stories & writtings too
                 </h3>
@@ -78,9 +77,9 @@ function Home() {
 
             <div className='mt-14'>
                 <h3 className='text-2xl font-bold font-inter-700 text-black/90'>Book a Call</h3>
-                <p className='mt-2 font-inter-400 text-lg'>Have an idea? I can bring it live within weeks. Looking for a person who has immense attraction towards coding? I'm here. I'm available for internships & freelancing gigs.</p>
-                <p className='font-inter-400 text-lg'>I can build from fancy websites to lame (like this one) or, are you confused with your requirements? Let's have a talk and I'll help you out.</p>
-                <p className='font-inter-700 text-xl text-black/85'>I code first, talk later.</p>
+                <p className='mt-2 font-inter-400 text-base sm:text-lg'>Have an idea? I can bring it live within weeks. Looking for a person who has immense attraction towards coding? I'm here. I'm available for internships & freelancing gigs.</p>
+                <p className='font-inter-400 text-base sm:text-lg'>I can build from fancy websites to lame (like this one) or, are you confused with your requirements? Let's have a talk and I'll help you out.</p>
+                <p className='font-inter-700 text-lg sm:text-xl text-black/85'>I code first, talk later.</p>
             </div>
 
             <Footer />

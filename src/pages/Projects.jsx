@@ -73,7 +73,7 @@ function Projects() {
         </button>
       </div>
 
-      <div className='grid grid-cols-2 gap-x-10 gap-y-7 mt-7'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-7 mt-7'>
         {
           visibleProjects.length === 0 && (
             <p className="text-center mt-4 text-gray-500">No projects found for this category.</p>
