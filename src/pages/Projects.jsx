@@ -19,24 +19,22 @@ function Projects() {
 
   return (
     <div>
-      <div className='flex flex-row gap-x-2 items-center'>
-        <div className='text-2xl font-bold font-inter-700 text-black/90'>Projects I've built</div>
-        <div className='text-2xl font-inter-500 text-gray-600'>
+      <div className='sm:text-2xl text-xl font-bold font-inter-700 text-black/90'>Projects built
+        <span className='font-inter-500 text-gray-600'>
           {
             impactful &&
-            <p>to solve real problems</p>
+            <span> to solve real problems</span>
           }
           {
             fun &&
-            <p>for fun</p>
+            <span> for fun</span>
           }
           {
             clone &&
-            <p>to improve design sense</p>
+            <span> to improve design sense</span>
           }
-        </div>
+        </span>
       </div>
-
       <div className='flex *:border *:py-1 *:px-2 gap-x-2.5 mt-4 *:rounded-lg *:cursor-pointer *:text-sm'>
         <button
           onClick={() => { setImpactful(true); setFun(false); setClone(false); }}
@@ -76,7 +74,7 @@ function Projects() {
       <div className='grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-7 mt-7'>
         {
           visibleProjects.length === 0 && (
-            <p className="text-center mt-4 text-gray-500">No projects found for this category.</p>
+            <p className="text-center mt-4 text-gray-500">Projects are under construction.</p>
           )
         }
         {

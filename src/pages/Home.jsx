@@ -19,12 +19,12 @@ function Home() {
                 <Intro />
             </div>
 
-            <div className='flex justify-center items-center mt-12'>
+            <div className='flex justify-center items-center mt-8 sm:mt-10'>
                 <NPM />
             </div>
 
-            <div id="work" className='mt-15 scroll-mt-28'>
-                <h3 className='text-2xl font-bold font-inter-700 text-black/90'>Professional Experience</h3>
+            <div id="work" className='mt-9 sm:mt-10 scroll-mt-28'>
+                <h3 className='sm:text-2xl text-xl font-bold font-inter-700 text-black/90'>Professional Experience</h3>
                 {
                     expirence.map((item) => (
                         <Expirence key={item.id} imageUrl={item.imageUrl} companyName={item.companyName} position={item.position} startDate={item.startDate} endDate={item.endDate} type={item.type} place={item.place} contribution={item.contribution} />
@@ -36,23 +36,31 @@ function Home() {
                 <Projects />
             </div>
 
-            <div className='mt-14 text-center flex gap-x-1 items-center font-inter-400'>
-                <p className='text-lg'>I love designing bento styled websites, just like how <span className='font-inter-700'>Rengoku</span> loves to eat <span className='font-inter-400-italic'>ekiben.</span></p>
-                <div><img src="/icons/sound.png" className='w-6 cursor-pointer' /></div>
+            <div className="mt-14 text-center font-inter-400">
+                <p className="sm:text-lg text-md">
+                    I love designing bento styled websites, just like how{" "}
+                    <span className="font-inter-700">Rengoku</span> loves to eat{" "}
+                    <span className="font-inter-400-italic">ekiben.</span>
+                    <img
+                        src="/icons/sound.png"
+                        alt="sound icon"
+                        className="inline-block w-6 ml-1 align-text-bottom cursor-pointer"
+                    />
+                </p>
             </div>
 
             <div className='mt-14 sm:flex justify-center items-center hidden'>
                 <Bento />
             </div>
 
-            <div className='mt-14'>
-                <h3 className='text-2xl font-bold font-inter-700 text-black/90'>Stack I primarily use</h3>
+            <div className='sm:mt-14 mt-11'>
+                <h3 className='sm:text-2xl text-xl font-inter-700 text-black/90'>Stack I primarily use</h3>
                 <Stack />
             </div>
 
-            <div className='mt-14'>
-                <h3 className='text-2xl font-bold font-inter-700 text-black/90'>Little more about myself</h3>
-                <div className='mt-2 font-inter-400 text-base sm:text-lg flex flex-col gap-y-1'>
+            <div className='sm:mt-14 mt-11'>
+                <h3 className='sm:text-2xl text-xl font-inter-700 text-black/90'>Little more about myself</h3>
+                <div className='mt-2 font-inter-400 text-md sm:text-lg flex flex-col gap-y-1'>
                     <div>
                         I started my web development journey around <span className='font-inter-400-italic'>Septermber 2024</span>, which started as a curosity to built an web application turned out to be my main stream focus where I started learning tech from <span className='font-inter-700'>first principles</span> (unknowingly) by building projects which made my foundations strong.
                     </div>
@@ -68,16 +76,16 @@ function Home() {
                 </div>
             </div>
 
-            <div id="blogs" className='mt-10 scroll-mt-28'>
-                <h3 className='text-2xl font-bold font-inter-700 text-black/90'>
+            <div id="blogs" className='sm:mt-10 mt-8 scroll-mt-28'>
+                <h3 className='sm:text-2xl text-xl font-bold font-inter-700 text-black/90'>
                     I share my stories & writtings too
                 </h3>
                 <Blogs />
             </div>
 
-            <div className='mt-14'>
-                <h3 className='text-2xl font-bold font-inter-700 text-black/90'>Book a Call</h3>
-                <p className='mt-2 font-inter-400 text-base sm:text-lg'>Have an idea? I can bring it live within weeks. Looking for a person who has immense attraction towards coding? I'm here. I'm available for internships & freelancing gigs.</p>
+            <div className='sm:mt-14 mt-10'>
+                <h3 className='sm:text-2xl text-xl font-bold font-inter-700 text-black/90'>Book a Call</h3>
+                <p className='mt-2 font-inter-400 text-md sm:text-lg'>Have an idea? I can bring it live within weeks. Looking for a person who has immense attraction towards coding? I'm here. I'm available for internships & freelancing gigs.</p>
                 <p className='font-inter-400 text-base sm:text-lg'>I can build from fancy websites to lame (like this one) or, are you confused with your requirements? Let's have a talk and I'll help you out.</p>
                 <p className='font-inter-700 text-lg sm:text-xl text-black/85'>I code first, talk later.</p>
             </div>
